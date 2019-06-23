@@ -1,7 +1,7 @@
 import React from 'react';
+import Layouts from './Components/Layouts/Layouts';
+import './styles/app.scss';
 
-function App() {
-    return <div className="App">Test</div>;
-}
+const App = () => <Layouts />;
 
 export default App;
