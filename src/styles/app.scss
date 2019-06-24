@@ -1,3 +1,6 @@
 $family-sans-serif: 'Overpass', sans-serif;
 @import '~react-bulma-components/src/index';
 $primary: blue;
+html {
+    scroll-behavior: smooth;
+}

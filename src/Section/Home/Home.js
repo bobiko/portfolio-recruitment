@@ -7,7 +7,7 @@ import Container from 'react-bulma-components/lib/components/container';
 
 const Home = () => {
     return (
-        <Section>
+        <Section className="is-paddingless">
             <Hero color="primary" size="fullheight">
                 <Hero.Body>
                     <Container>

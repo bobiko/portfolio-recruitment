@@ -18,11 +18,14 @@ const NavbarMenu = () => {
                 <Navbar.Burger active={open} onClick={() => setOpening(!open)} />
             </Navbar.Brand>
             <Navbar.Menu active={open}>
-                <Navbar.Container>
-                    <Navbar.Item href="#">Menu</Navbar.Item>
-                </Navbar.Container>
                 <Navbar.Container position="end">
-                    <Navbar.Item href="#">Riight</Navbar.Item>
+                    <Navbar.Item href="#">Home</Navbar.Item>
+                    <Navbar.Item href="#">About</Navbar.Item>
+                    <Navbar.Item href="#">Work</Navbar.Item>
+                    <Navbar.Item href="#">Process</Navbar.Item>
+                    <Navbar.Item href="#">Services</Navbar.Item>
+                    <Navbar.Item href="#">Testimonials</Navbar.Item>
+                    <Navbar.Item href="#">Contact</Navbar.Item>
                 </Navbar.Container>
             </Navbar.Menu>
         </Navbar>
