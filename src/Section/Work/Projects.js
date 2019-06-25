@@ -25,7 +25,12 @@ const projects = [
 ];
 
 const Project = ({ items }) => {
-    return items.map(item => <Columns.Column size={3}>{item.name}</Columns.Column>);
+    return items.map((item, i) => (
+        <Columns.Column size={3}>
+            {item.name}{' '}
+            <img src={`${process.env.PUBLIC_URL}/assets/projects/${item.id}.jpg`} alt={item.id} />
+        </Columns.Column>
+    ));
 };
 
 const Projects = () => {
@@ -33,7 +38,7 @@ const Projects = () => {
         <Section className="is-paddingless">
             <Hero color="default" size="default">
                 <Hero.Body>
-                    <Container size="full">
+                    <Container>
                         <Columns>
                             <Project items={projects} />
                         </Columns>
