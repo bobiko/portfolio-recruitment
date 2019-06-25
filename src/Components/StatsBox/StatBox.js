@@ -1,17 +1,15 @@
 import React, { Fragment } from 'react';
 import Media from 'react-bulma-components/lib/components/media';
-import Image from 'react-bulma-components/lib/components/image';
 import Content from 'react-bulma-components/lib/components/content';
 import Section from 'react-bulma-components/lib/components/section';
-import Icon from 'react-bulma-components/lib/components/icon';
-
 import '../../styles/components/_statsbox.scss';
+import { StatsBoxIcon } from './StatsBoxIcon';
 
 const StatsBox = ({ icon, name, value }) => {
     return (
         <Section className="is-paddingless section-statsbox">
             <Media.Item renderAs="figure" position="left">
-                <Icon icon={icon} />
+                <StatsBoxIcon icon={icon} size="128" />
             </Media.Item>
             <Media.Item>
                 <Content>

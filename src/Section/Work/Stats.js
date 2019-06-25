@@ -10,7 +10,7 @@ const details = [
     { name: 'Projects Completed', value: 548, icon: 'work' },
     { name: 'Working Hours', value: 1465, icon: 'clock' },
     { name: 'Positive Feedbacks', value: 612, icon: 'star' },
-    { name: 'Happy Clients', value: 735, icon: 'heartyarn' },
+    { name: 'Happy Clients', value: 735, icon: 'heart' },
 ];
 
 const Stat = ({ items }) => {
@@ -24,7 +24,7 @@ const Stat = ({ items }) => {
 const Stats = () => {
     return (
         <Section className="is-paddingless">
-            <Hero color="primary" size="medium">
+            <Hero color="primary" size="default">
                 <Hero.Body>
                     <Container>
                         <Columns>
