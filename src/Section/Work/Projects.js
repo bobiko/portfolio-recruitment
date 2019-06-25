@@ -5,6 +5,7 @@ import Section from 'react-bulma-components/lib/components/section';
 import Container from 'react-bulma-components/lib/components/container';
 import Columns from 'react-bulma-components/lib/components/columns';
 import StatsBox from '../../Components/StatsBox/StatBox';
+import LoadMore from '../../Components/LoadMore/LoadMore';
 
 const projects = [
     { name: 'loremveniam', id: '001' },
@@ -41,6 +42,7 @@ const Projects = () => {
                     <Container>
                         <Columns>
                             <Project items={projects} />
+                            <LoadMore />
                         </Columns>
                     </Container>
                 </Hero.Body>

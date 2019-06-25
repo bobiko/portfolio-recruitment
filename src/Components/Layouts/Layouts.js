@@ -20,6 +20,12 @@ const Layouts = () => {
             <Fade left>
                 <Work />
             </Fade>
+            <Fade>{/* <Proccess /> */}</Fade>
+            <Fade>{/* <Services /> */}</Fade>
+            <Fade>{/* <Testimonials /> */}</Fade>
+            <Fade>{/* <Brands /> */}</Fade>
+            <Fade>{/* <Contact /> */}</Fade>
+            {/* <Footer /> */}
         </Fragment>
     );
 };
