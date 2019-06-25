@@ -6,13 +6,13 @@ import Columns from 'react-bulma-components/lib/components/columns';
 
 const LoadMore = () => {
     return (
-        <Section className="is-paddingless" style={{ backgroundColor: 'gray' }}>
+        <Section className="is-paddingless">
             <Hero color="default">
                 <Hero.Body>
                     <Container>
                         <Columns className="is-centered">
-                            <Columns.Column className="is-half">
-                                <div className="is-centerd">Load More</div>
+                            <Columns.Column className="6" offset="3">
+                                <div className="has-text-centered">Load More</div>
                             </Columns.Column>
                         </Columns>
                     </Container>

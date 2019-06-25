@@ -5,14 +5,14 @@ import Navbar from 'react-bulma-components/lib/components/navbar';
 const NavbarMenu = () => {
     const [open, setOpening] = useState(false);
     return (
-        <Navbar fixed="top" active={false} transparent={true}>
+        <Navbar fixed="top" active={true} transparent={true} className="navbar-transparent">
             <Navbar.Brand>
                 <Navbar.Item renderAs="a" href="#">
                     <img
-                        src="https://bulma.io/images/bulma-logo.png"
-                        alt="Bulma: a modern CSS framework based on Flexbox"
-                        width="112"
-                        height="28"
+                        src={process.env.PUBLIC_URL + '/assets/like.svg'}
+                        alt="Piroll Design"
+                        width="64"
+                        height="64"
                     />
                 </Navbar.Item>
                 <Navbar.Burger active={open} onClick={() => setOpening(!open)} />

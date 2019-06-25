@@ -4,7 +4,7 @@ import Hero from 'react-bulma-components/lib/components/hero';
 import Section from 'react-bulma-components/lib/components/section';
 import Container from 'react-bulma-components/lib/components/container';
 import Columns from 'react-bulma-components/lib/components/columns';
-import StatsBox from '../../Components/StatsBox/StatBox';
+import Project from '../../Components/Project/Project';
 import LoadMore from '../../Components/LoadMore/LoadMore';
 
 const projects = [
@@ -25,22 +25,13 @@ const projects = [
     },
 ];
 
-const Project = ({ items }) => {
-    return items.map((item, i) => (
-        <Columns.Column size={3}>
-            {item.name}{' '}
-            <img src={`${process.env.PUBLIC_URL}/assets/projects/${item.id}.jpg`} alt={item.id} />
-        </Columns.Column>
-    ));
-};
-
 const Projects = () => {
     return (
-        <Section className="is-paddingless">
+        <Section className="is-paddingless section-work">
             <Hero color="default" size="default">
-                <Hero.Body>
+                <Hero.Body className="is-paddingless">
                     <Container>
-                        <Columns>
+                        <Columns gapless>
                             <Project items={projects} />
                             <LoadMore />
                         </Columns>
