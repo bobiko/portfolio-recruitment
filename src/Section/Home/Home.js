@@ -11,20 +11,25 @@ import ButtonLink from '../../Components/ButtonLink/ButtonLink';
 const Home = () => {
     return (
         <Section className="is-paddingless hero-home">
-            <Hero color="default" size="fullheight is-fullheight-with-navbar has-bg-img ">
+            <Hero size="fullheight" className="is-fullheight-with-navbar has-bg-img ">
                 <Hero.Body>
                     <Container>
                         <Columns>
-                            <Columns.Column size="5" offset="7">
+                            <Columns.Column size={5} offset={7}>
                                 <Heading>We Design and Develop </Heading>
                                 <Content>
-                                    fakerEsse sit numquam molestiae in nostrum modi. Repellat
-                                    quae sed accusamus accusamus necessitatibus quaerat sint id
-                                    quia. Ut dolores quia illo laudantium consequatur. Ut quia
-                                    illo eius et adipisci.
+                                    fakerEsse sit numquam molestiae in nostrum modi. Repellat quae
+                                    sed accusamus accusamus necessitatibus quaerat sint id quia. Ut
+                                    dolores quia illo laudantium consequatur. Ut quia illo eius et
+                                    adipisci.
                                 </Content>
                                 <Content>
-                                    <ButtonLink size="large" href="#contact" color="primary" rounded="false">
+                                    <ButtonLink
+                                        size="large"
+                                        href="#contact"
+                                        color="primary"
+                                        rounded="false"
+                                    >
                                         Contact Us
                                     </ButtonLink>
                                 </Content>

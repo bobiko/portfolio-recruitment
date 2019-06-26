@@ -2,11 +2,14 @@ $family-sans-serif: 'Overpass', sans-serif;
 $primary: #10c9c3;
 $gray: #f5f5f5;
 $fontBlack: #1d1d1d;
+$footerBg: #141414;
+$footerLinkColor: #888888;
 
 $body-color: $fontBlack;
 
 @import '~react-bulma-components/src/index';
 @import '~bulma/bulma';
+@import 'bulma-extensions/src/sass/index.sass';
 
 html {
     scroll-behavior: smooth;
@@ -17,3 +20,6 @@ html {
 @import './/components/statsbox';
 @import './components/home';
 @import './components//navbar';
+@import './components/testimonials';
+@import './components/contact';
+@import './components/footer';

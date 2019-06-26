@@ -14,9 +14,9 @@ const details = [
 ];
 
 const Stat = ({ items }) => {
-    return items.map(item => (
+    return items.map((item, i) => (
         <Columns.Column>
-            <StatsBox {...item} />
+            <StatsBox key={Math.random()} {...item} />
         </Columns.Column>
     ));
 };
@@ -24,7 +24,7 @@ const Stat = ({ items }) => {
 const Stats = () => {
     return (
         <Section className="is-paddingless">
-            <Hero color="primary" size="default">
+            <Hero color="primary">
                 <Hero.Body>
                     <Container>
                         <Columns>

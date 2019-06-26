@@ -1,9 +1,8 @@
 .hero-home {
     margin-top: -54px;
-    &.has-bg-img {
-    background: url('/assets/sections/Home.jpg') center center;
-    background-size: cover;
-    color: $fontBlack;
+    .has-bg-img {
+        background: url('/assets/sections/Home.jpg') center center;
+        background-size: cover;
+        color: $fontBlack;
+    }
 }
-}
-

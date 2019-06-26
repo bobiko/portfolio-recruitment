@@ -26,15 +26,15 @@ const projects = [
 ];
 
 const Projects = () => {
-    return (
+return (
         <Section className="is-paddingless section-work">
-            <Hero color="default" size="default">
+            <Hero  size="default">
                 <Hero.Body className="is-paddingless">
                     <Container>
                         <Columns gapless>
-                            <Project items={projects} />
-                            <LoadMore />
+                            <Project items={projects} limit={8} />
                         </Columns>
+                        <LoadMore />
                     </Container>
                 </Hero.Body>
             </Hero>

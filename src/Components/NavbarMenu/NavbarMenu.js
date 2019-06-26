@@ -15,7 +15,7 @@ const menu = [
 const NavbarMenu = () => {
     const [open, setOpening] = useState(false);
     return (
-        <Navbar fixed="top" active={true} transparent={true} className="navbar-transparent">
+        <Navbar fixed="top" active={open} transparent={true} className="navbar-transparent">
             <Navbar.Brand>
                 <Navbar.Item renderAs="a" href="#">
                     <img
@@ -29,8 +29,10 @@ const NavbarMenu = () => {
             </Navbar.Brand>
             <Navbar.Menu active={open}>
                 <Navbar.Container position="end">
-                    {menu.map(item => (
-                        <Navbar.Item href={item.href}>{item.name}</Navbar.Item>
+                    {menu.map((item, id) => (
+                        <Navbar.Item key={id} href={item.href}>
+                            {item.name}
+                        </Navbar.Item>
                     ))}
                 </Navbar.Container>
             </Navbar.Menu>

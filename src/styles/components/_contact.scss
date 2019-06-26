@@ -1,0 +1,16 @@
+.section-contact {
+    background-color: $gray;
+
+    input,
+    textarea,
+    button {
+        border-radius: 0;
+        outline: none;
+        border-color: $gray;
+        &:focus {
+            outline: none;
+            border-color: $gray;
+            box-shadow: 0 0 0 $gray;
+        }
+    }
+}

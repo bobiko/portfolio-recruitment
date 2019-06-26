@@ -51,14 +51,14 @@ const services = [
 const Items = ({ items }) => {
     return items.map(item => (
         <Columns.Column size={3}>
-            <Service {...item} />
+            <Service key={Math.random()} {...item} />
         </Columns.Column>
     ));
 };
 const Services = () => {
     return (
         <Section className="is-paddingless section-service">
-            <Hero color="default" size="medium">
+            <Hero size="medium">
                 <Hero.Body>
                     <Container>
                         <Columns>

@@ -10,33 +10,36 @@ import ProgressBar from '../../Components/ProgressBar/ProgressBar';
 const Skills = () => {
     return (
         <Section className="is-paddingless has-bg-img section-skills">
-            <Hero color="default" size="large">
+            <Hero size="large">
                 <Hero.Body>
                     <Container>
                         <Columns>
                             <Columns.Column size={4}>
                                 <Heading>Professional Skills </Heading>
-                                <Content subtitle size={5}>
+                                <Content>
                                     <ProgressBar
                                         name="UI/UX Design"
-                                        value="75"
+                                        value={75}
                                         max={100}
                                         size="small"
                                         color="primary"
+                                        className="is-small-2x"
                                     />
                                     <ProgressBar
                                         name="Web Development"
-                                        value="90"
+                                        value={90}
                                         max={100}
                                         size="small"
                                         color="primary"
+                                        className="is-small-2x"
                                     />
                                     <ProgressBar
                                         name="Marketing"
-                                        value="65"
+                                        value={65}
                                         max={100}
                                         size="small"
                                         color="primary"
+                                        className="is-small-2x"
                                     />
                                 </Content>
                             </Columns.Column>

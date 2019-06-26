@@ -1,0 +1,16 @@
+.section-testimonials {
+    outline: none;
+    .content {
+        p {
+            padding: 0 40px;
+        }
+    }
+
+    .slider-navigation-next,
+    .slider-navigation-previous {
+        background: #000;
+    }
+    .slider-pagination {
+        bottom: -40px;
+    }
+}

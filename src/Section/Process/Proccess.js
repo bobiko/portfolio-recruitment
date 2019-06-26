@@ -10,12 +10,12 @@ const Home = () => {
             <Columns>
                 <Columns.Column size="half" offset="one-quarter">
                     <Content className="has-text-centered">
-                        Ut vel cupiditate eum. Repudiandae maxime aliquam qui quia. Quisquam dolorum
-                        recusandae consectetur voluptatem saepe. Illum molestiae modi ut odio
-                        expedita quo nobis. Quam eius et amet. Quia quia mollitia.
+                        Ut vel cupiditate eum. Repudiandae maxime aliquam qui quia. Quisquam
+                        dolorum recusandae consectetur voluptatem saepe. Illum molestiae modi ut
+                        odio expedita quo nobis. Quam eius et amet. Quia quia mollitia.
                     </Content>
                 </Columns.Column>
-                <Columns.Column size="11" offset="1">
+                <Columns.Column size={11} offset={1}>
                     <Content className="has-text-centered">
                         <Image
                             src={process.env.PUBLIC_URL + '/assets/sections/proccess.jpg'}

@@ -11,16 +11,16 @@ import Image from 'react-bulma-components/lib/components/image';
 const About = () => {
     return (
         <Section className="is-paddingless">
-            <Hero color="default" size="medium">
+            <Hero size="medium">
                 <Hero.Body>
                     <Container>
                         <Columns>
-                            <Columns.Column size="6" offset="3">
+                            <Columns.Column size={6} offset={3} className="has-text-centered">
                                 <Heading>About Us </Heading>
                                 <Content>
-                                    Ea nemo illum quod saepe. Et quasi et cupiditate voluptas
-                                    aut. Est quae soluta temporibus animi. Voluptate eum ipsam
-                                    corrupti velit. Aut consequatur quidem.
+                                    Ea nemo illum quod saepe. Et quasi et cupiditate voluptas aut.
+                                    Est quae soluta temporibus animi. Voluptate eum ipsam corrupti
+                                    velit. Aut consequatur quidem.
                                 </Content>
                                 <Content>
                                     <Image
@@ -29,7 +29,6 @@ const About = () => {
                                             '/assets/sections/Home-sign.jpg'
                                         }
                                         alt="sign"
-                                        size="1x1"
                                     />
                                 </Content>
                             </Columns.Column>
