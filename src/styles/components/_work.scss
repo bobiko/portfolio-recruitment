@@ -1,0 +1,16 @@
+.section-work {
+    background: $gray;
+}
+
+.section-skills {
+    margin-top: -54px;
+    &.has-bg-img {
+        background: url('/assets/sections/Skills.jpg') center center;
+        background-size: cover;
+        color: $fontBlack;
+    }
+
+    .is-small-2x {
+        height: 0.2rem;
+    }
+}

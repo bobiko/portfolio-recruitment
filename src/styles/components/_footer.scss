@@ -1,0 +1,25 @@
+.section-footer {
+    background-color: $footerBg;
+    color: $gray;
+
+    .content {
+        color: $footerLinkColor;
+    }
+
+    is-vertical-center {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        a {
+            color: $footerLinkColor;
+            &:hover {
+                color: $gray;
+            }
+        }
+        li {
+            list-style: none;
+        }
+    }
+}
