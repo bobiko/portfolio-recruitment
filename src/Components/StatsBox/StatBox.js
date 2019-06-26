@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Media from 'react-bulma-components/lib/components/media';
 import Content from 'react-bulma-components/lib/components/content';
 import Section from 'react-bulma-components/lib/components/section';

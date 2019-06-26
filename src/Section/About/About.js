@@ -10,7 +10,7 @@ import Image from 'react-bulma-components/lib/components/image';
 
 const About = () => {
     return (
-        <Section className="is-paddingless">
+        <Section className="is-paddingless" id="about">
             <Hero size="medium">
                 <Hero.Body>
                     <Container>

@@ -13,10 +13,11 @@ const SimpleCard = ({
     color,
     paddingLess,
     containerClass,
+    id,
     ...props
 }) => {
     return (
-        <Section className={paddingLess && 'is-paddingless'}>
+        <Section className={paddingLess && 'is-paddingless'} id={id}>
             <Hero color={color || false} size={size}>
                 <Hero.Body>
                     <Container className={containerClass}>

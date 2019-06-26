@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Skills from './Skills';
 import Stats from './Stats';
-import Projects from './Projects'
+import Projects from './Projects';
 
 const Work = () => {
     return (
-        <Fragment>
+        <div id="work">
             <Skills />
             <Stats />
             <Projects />
-        </Fragment>
+        </div>
     );
 };
 

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import Button from 'react-bulma-components/lib/components/button';
 import Navbar from 'react-bulma-components/lib/components/navbar';
 
 const menu = [

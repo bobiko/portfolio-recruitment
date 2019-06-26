@@ -11,11 +11,12 @@ import Brands from '../../Section/Brands/Brands';
 import Contact from '../../Section/Contact/Contact';
 import Footer from '../../Section/Footer/Footer';
 
+
 const Layouts = () => {
     return (
         <Fragment>
             <Header />
-            <Fade lefts>
+            <Fade left>
                 <Home />
             </Fade>
             <Fade>

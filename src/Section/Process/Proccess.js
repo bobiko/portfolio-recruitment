@@ -6,7 +6,7 @@ import SimpleCard from '../../Components/SimpleCard/SimpleCard';
 
 const Home = () => {
     return (
-        <SimpleCard title="Our Work Procces" size="default" containerClass="has-text-centered">
+        <SimpleCard title="Our Work Procces" size="default" containerClass="has-text-centered" id="proccess">
             <Columns>
                 <Columns.Column size="half" offset="one-quarter">
                     <Content className="has-text-centered">

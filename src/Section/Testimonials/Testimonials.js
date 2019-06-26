@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Content from 'react-bulma-components/lib/components/content';
 import Hero from 'react-bulma-components/lib/components/hero';
 import Section from 'react-bulma-components/lib/components/section';
-import Columns from 'react-bulma-components/lib/components/columns';
 import bulmaCarousel from 'bulma-extensions/bulma-carousel/dist/js/bulma-carousel';
 import Container from 'react-bulma-components/lib/components/container';
 
@@ -16,7 +15,7 @@ class Testimonials extends Component {
 
     render() {
         return (
-            <Section className="is-paddingless section-testimonials is-clipped">
+            <Section className="is-paddingless section-testimonials is-clipped" id="testimonials">
                 <Hero color="primary" size="large" className="has-text-centered">
                     <Hero.Body>
                         <Container>

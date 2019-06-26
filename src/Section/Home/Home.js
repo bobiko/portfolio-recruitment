@@ -10,7 +10,7 @@ import ButtonLink from '../../Components/ButtonLink/ButtonLink';
 
 const Home = () => {
     return (
-        <Section className="is-paddingless hero-home">
+        <Section className="is-paddingless hero-home" id="home">
             <Hero size="fullheight" className="is-fullheight-with-navbar has-bg-img ">
                 <Hero.Body>
                     <Container>

@@ -57,7 +57,7 @@ const Items = ({ items }) => {
 };
 const Services = () => {
     return (
-        <Section className="is-paddingless section-service">
+        <Section className="is-paddingless section-service" id="services">
             <Hero size="medium">
                 <Hero.Body>
                     <Container>
