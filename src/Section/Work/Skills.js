@@ -9,12 +9,12 @@ import Content from 'react-bulma-components/lib/components/content';
 import ProgressBar from '../../Components/ProgressBar/ProgressBar';
 const Skills = () => {
     return (
-        <Section className="is-paddingless">
-            <Hero color="default" size="medium">
+        <Section className="is-paddingless has-bg-img section-skills">
+            <Hero color="default" size="large">
                 <Hero.Body>
                     <Container>
                         <Columns>
-                            <Columns.Column size={6}>
+                            <Columns.Column size={4}>
                                 <Heading>Professional Skills </Heading>
                                 <Content subtitle size={5}>
                                     <ProgressBar

@@ -2,6 +2,16 @@ import React, { useState } from 'react';
 // import Button from 'react-bulma-components/lib/components/button';
 import Navbar from 'react-bulma-components/lib/components/navbar';
 
+const menu = [
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Work', href: '#work' },
+    { name: 'Proccess', href: '#proccess' },
+    { name: 'Services', href: '#services' },
+    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Contact', href: '#contact' },
+];
+
 const NavbarMenu = () => {
     const [open, setOpening] = useState(false);
     return (
@@ -19,13 +29,9 @@ const NavbarMenu = () => {
             </Navbar.Brand>
             <Navbar.Menu active={open}>
                 <Navbar.Container position="end">
-                    <Navbar.Item href="#">Home</Navbar.Item>
-                    <Navbar.Item href="#">About</Navbar.Item>
-                    <Navbar.Item href="#">Work</Navbar.Item>
-                    <Navbar.Item href="#">Process</Navbar.Item>
-                    <Navbar.Item href="#">Services</Navbar.Item>
-                    <Navbar.Item href="#">Testimonials</Navbar.Item>
-                    <Navbar.Item href="#">Contact</Navbar.Item>
+                    {menu.map(item => (
+                        <Navbar.Item href={item.href}>{item.name}</Navbar.Item>
+                    ))}
                 </Navbar.Container>
             </Navbar.Menu>
         </Navbar>

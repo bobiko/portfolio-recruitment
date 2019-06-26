@@ -20,7 +20,7 @@ const SimpleCard = ({
             <Hero color={color || 'default'} size={size}>
                 <Hero.Body>
                     <Container className={containerClass}>
-                        <Heading>{title} </Heading>
+                        {title && <Heading>{title} </Heading>}
                         {subtitle && (
                             <Heading subtitle size={3}>
                                 {subtitle}
